@@ -423,7 +423,8 @@ public class KThread {
 		
 		joinTest4();
 		//Condition2Test.runTest();
-		AlarmTester.selfTest();
+		//AlarmTester.selfTest();
+		Boat.selfTest();
 	}
 
 	private static void joinTest3(){

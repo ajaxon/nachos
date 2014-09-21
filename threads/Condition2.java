@@ -39,8 +39,8 @@ public class Condition2 {
 	 */
 	public void sleep() {
 		Lib.assertTrue(conditionLock.isHeldByCurrentThread());	
-		conditionLock.release();
 		Machine.interrupt().disable();
+		conditionLock.release();
 		waitingList.add(KThread.currentThread());
 		KThread.sleep();
 		Machine.interrupt().enable();
